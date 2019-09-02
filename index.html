@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ccHub - Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 offset-md-4 my-5">
+      <div class="text-center text-info">
+        <h2 class="mb-3">ccHub - Calculator</h2>
+      </div>
+      
+      <form action="" name="calculator">
+        <div class="row">
+          <div class="col bg-warning">
+            <input name="result" class="form-control form-control-lg text-right py-5 border-0 bg-transparent text-white" placeholder="0">
+          </div>
+        </div>
+        
+<!--        1st row-->
+        <div class="row bg-light pt-4">
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="v7" value="7" onClick="calculate(v7.value)"></div>
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="v8" value="8" onClick="calculate(v8.value)"></div>
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="v9" value="9" onClick="calculate(v9.value)"></div>
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="addv" value="+" onClick="calculate(addv.value)"></div>
+        </div>
+  
+<!--        2nd row-->
+        <div class="row bg-light">
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="v4" value="4" onClick="calculate(v4.value)"></div>
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="v5" value="5" onClick="calculate(v5.value)"></div>
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="v6" value="6" onClick="calculate(v6.value)"></div>
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="subv" value="-" onClick="calculate(subv.value)"></div>
+        </div>
+        
+<!--        3rd row-->
+        <div class="row bg-light">
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="v1" value="1" onClick="calculate(v1.value)"></div>
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="v2" value="2" onClick="calculate(v2.value)"></div>
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="v3" value="3" onClick="calculate(v3.value)"></div>
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="mulv" value="*" onClick="calculate(mulv.value)"></div>
+        </div>
+        
+<!--        4th row-->
+        <div class="row bg-light">
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="v0" value="0" onClick="calculate(v0.value)"></div>
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="potv" value="." onClick="calculate(potv.value)"></div>
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="divv" value="/" onClick="calculate(divv.value)"></div>
+          <div class="col"><input type="button" class="form-control text-center my-2 border-0" name="equv" value="=" onClick="equate()"></div>
+        </div>
+        
+<!--        5th row-->
+        <div class="row bg-light pb-4">
+          <div class="col"><input type="reset" class="form-control text-center my-2 border-0" name="clear" value="C" onClick="clear()"></div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+
+</html>
